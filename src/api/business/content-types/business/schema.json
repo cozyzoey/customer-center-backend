@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "businesses",
+  "info": {
+    "singularName": "business",
+    "pluralName": "businesses",
+    "displayName": "Business",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "string"
+    },
+    "terms": {
+      "type": "richtext"
+    },
+    "privacy": {
+      "type": "richtext"
+    }
+  }
+}
