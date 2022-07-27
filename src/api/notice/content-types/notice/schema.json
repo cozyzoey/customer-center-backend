@@ -4,10 +4,11 @@
   "info": {
     "singularName": "notice",
     "pluralName": "notices",
-    "displayName": "Notice"
+    "displayName": "Notice",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
