@@ -9,6 +9,8 @@ module.exports = ({ env }) => ({
       database: env("DATABASE_NAME", "strapi"),
       user: env("DATABASE_USERNAME", "admin"),
       password: env("DATABASE_PASSWORD", "strapi"),
+      charset: "utf8mb4",
+      collation: "utf8mb4_unicode_ci",
     },
     useNullAsDefault: true,
   },
