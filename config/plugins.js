@@ -24,5 +24,35 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  ckeditor: true,
+  ckeditor: {
+    enabled: true,
+    config: {
+      editor: {
+        toolbar: {
+          items: [
+            "paragraph",
+            "heading1",
+            "heading2",
+            "heading3",
+            "|",
+            "bold",
+            "italic",
+            "link",
+            "bulletedList",
+            "numberedList",
+            "|",
+            "outdent",
+            "indent",
+            "|",
+            "StrapiMediaLib",
+            "blockQuote",
+            "insertTable",
+            "mediaEmbed",
+            "undo",
+            "redo",
+          ],
+        },
+      },
+    },
+  },
 });
