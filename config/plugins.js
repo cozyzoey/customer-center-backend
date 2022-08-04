@@ -16,11 +16,11 @@ module.exports = ({ env }) => ({
         delete: {},
       },
     },
-    "users-permissions": {
-      config: {
-        jwt: {
-          expiresIn: "30d",
-        },
+  },
+  "users-permissions": {
+    config: {
+      jwt: {
+        expiresIn: "30d",
       },
     },
   },
