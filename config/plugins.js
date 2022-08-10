@@ -29,6 +29,8 @@ module.exports = ({ env }) => ({
           user: env("SMTP_USERNAME"),
           pass: env("SMTP_PASSWORD"),
         },
+        debug: true,
+        logger: true,
       },
       settings: {
         defaultFrom: "info@nia-help.com",
