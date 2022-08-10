@@ -18,9 +18,20 @@ module.exports = ({ env }) => ({
     },
   },
   email: {
-    provider: "sendgrid",
-    providerOptions: {
-      apiKey: env("SENDGRID_API_KEY"),
+    config: {
+      provider: "nodemailer",
+      providerOptions: {
+        host: env("SMTP_HOST"),
+        port: env("SMTP_PORT"),
+        auth: {
+          user: env("SMTP_USERNAME"),
+          pass: env("SMTP_PASSWORD"),
+        },
+      },
+      settings: {
+        defaultFrom: "info@nia-help.com",
+        defaultReplyTo: "info@nia-help.com",
+      },
     },
   },
   "users-permissions": {
