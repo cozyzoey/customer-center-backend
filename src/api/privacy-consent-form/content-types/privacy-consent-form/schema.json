@@ -4,10 +4,11 @@
   "info": {
     "singularName": "privacy-consent-form",
     "pluralName": "privacy-consent-forms",
-    "displayName": "Privacy Consent Form"
+    "displayName": "Privacy Consent Form",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -35,6 +36,12 @@
     },
     "parentEmail": {
       "type": "email"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "privacy_consent_form"
     }
   }
 }
