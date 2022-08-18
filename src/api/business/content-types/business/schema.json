@@ -4,7 +4,8 @@
   "info": {
     "singularName": "business",
     "pluralName": "businesses",
-    "displayName": "Business"
+    "displayName": "Business",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,9 @@
     },
     "privacy": {
       "type": "richtext"
+    },
+    "privacyConsentUrl": {
+      "type": "string"
     }
   }
 }

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "privacy_consent_forms",
+  "info": {
+    "singularName": "privacy-consent-form",
+    "pluralName": "privacy-consent-forms",
+    "displayName": "Privacy Consent Form"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "schoolName": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "parentName": {
+      "type": "string"
+    },
+    "parentEmail": {
+      "type": "email"
+    }
+  }
+}
