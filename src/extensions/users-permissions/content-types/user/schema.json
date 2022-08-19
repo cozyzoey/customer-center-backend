@@ -80,6 +80,28 @@
       "relation": "oneToOne",
       "target": "api::privacy-consent-form.privacy-consent-form",
       "inversedBy": "user"
+    },
+    "name": {
+      "type": "string"
+    },
+    "schoolName": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "parentName": {
+      "type": "string"
+    },
+    "parentEmail": {
+      "type": "email"
     }
   }
 }
