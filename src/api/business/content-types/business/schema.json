@@ -20,9 +20,6 @@
     },
     "privacy": {
       "type": "richtext"
-    },
-    "privacyConsentUrl": {
-      "type": "string"
     }
   }
 }

@@ -75,12 +75,6 @@
       "target": "api::answer.answer",
       "mappedBy": "user"
     },
-    "privacy_consent_form": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::privacy-consent-form.privacy-consent-form",
-      "inversedBy": "user"
-    },
     "name": {
       "type": "string"
     },
