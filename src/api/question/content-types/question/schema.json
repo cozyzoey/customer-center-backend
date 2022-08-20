@@ -29,6 +29,12 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "questions"
+    },
+    "userId": {
+      "type": "integer"
+    },
+    "username": {
+      "type": "string"
     }
   }
 }
