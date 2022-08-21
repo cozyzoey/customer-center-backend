@@ -5,4 +5,5 @@ module.exports = ({ env }) => ({
     keys: env.array("APP_KEYS"),
   },
   url: env("PUBLIC_URL"),
+  proxy: env.bool("IS_PROXIED", true),
 });
