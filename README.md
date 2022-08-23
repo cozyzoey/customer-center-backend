@@ -53,6 +53,7 @@
 - 사용자가 질문 및 댓글을 수정/삭제시에 원래 작성자에게만 권한 부여
 - 이메일 계정 및 JWT 인증
 - 가입시 이메일 확인, 비밀번호 찾기 기능
+- 데이터 import/export 기능
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,5 +76,6 @@ Project Link: [https://github.com/cozyzoey/customer-center-backend](https://gith
 - [Strapi - Create is owner policy](https://docs.strapi.io/developer-docs/latest/guides/is-owner.html)
 - [AWS ALB HTTP Redirection To HTTPS](https://aws.amazon.com/ko/premiumsupport/knowledge-center/elb-redirect-http-to-https-using-alb/)
 - [@strapi/provider-email-nodemailer](https://market.strapi.io/providers/@strapi-provider-email-nodemailer)
+- [Strapi - Import Export Entries](https://market.strapi.io/plugins/strapi-plugin-import-export-entries#install-now-section)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

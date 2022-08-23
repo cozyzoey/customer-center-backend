@@ -96,6 +96,14 @@
     },
     "parentEmail": {
       "type": "email"
+    },
+    "consentSigned": {
+      "type": "boolean",
+      "default": false
+    },
+    "consentSent": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
