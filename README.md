@@ -1,57 +1,79 @@
-# 🚀 Getting started with Strapi
+<a name="readme-top"></a>
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+<!-- PROJECT LOGO -->
+<div align="center">
+  <img src="https://res.cloudinary.com/dftuawd1d/image/upload/v1661158581/github/nia_homepage_logo.png" alt="logo" width="200" height="auto">
+  
+  <h1 align="center">교과용감성AI튜터 고객센터</h1>
 
-### `develop`
+  <p>
+    '인공지능 학습용 데이터 구축사업' 참여자를 위한 고객센터(백엔드)
+  </p>
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+  <p>
+    <a href="https://startsmall.link">데모 보기</a>
+  </p>
+</div>
 
-```
-npm run develop
-# or
-yarn develop
-```
+<!-- ABOUT THE PROJECT -->
 
-### `start`
+## About The Project
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+[![스크린샷](https://res.cloudinary.com/dftuawd1d/image/upload/v1661159037/github/nia_homepage_screenshot_skjtuq.png)](https://startsmall.link)
 
-```
-npm run start
-# or
-yarn start
-```
+과학기술정보통신부, NIA(AI-허브)가 추진하는 '인공지능 학습용 데이터 구축사업'에 참여하는 1,200명의 데이터 수집 참가자를 위한 고객센터입니다. 고객 응대를 위한 공지사항, FAQ, Q&A 서비스와 사업 참여동의서 제출을 위한 기능을 제공합니다. ([클라이언트 repo 보기](https://github.com/cozyzoey/customer-center-client))
 
-### `build`
+### Headless CMS
 
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
+관리자가 컨텐츠를 관리할 수 있도록 Headless CMS(`Strapi`)를 적용해 개발했습니다.
 
-```
-npm run build
-# or
-yarn build
-```
+### 서버 설정
 
-## ⚙️ Deployment
+1. AWS 로드밸런서에서 HTTP 요청을 HTTPS 요청으로 리다이렉트하여 모든 요청에 SSL을 적용합니다.
+2. 로드밸런서에서 수신한 요청은 서버 EC2 인스턴스의 HTTP 80포트 전달합니다.
+3. Nginx 웹서버에서 HTTP 80포트 요청을 서버가 실행되고 있는 포트로 전달합니다.
 
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
+### Tech Stack
 
-## 📚 Learn more
+<!-- https://github.com/Ileriayo/markdown-badges -->
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+- [![Strapi](https://img.shields.io/badge/strapi-%232E7EEA.svg?style=for-the-badge&logo=strapi&logoColor=white)](https://strapi.io/)
+- [![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/)
+- [![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)](https://mariadb.org/)
+- [![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
+- [![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)](https://www.nginx.com/)
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ✨ Community
+<!-- FEATURES -->
 
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+## Features
 
----
+- 공지사항, FAQ, Q&A(Question, Answewr)
+- 사용자가 질문 및 댓글을 수정/삭제시에 원래 작성자에게만 권한 부여
+- 이메일 계정 및 JWT 인증
+- 가입시 이메일 확인, 비밀번호 찾기 기능
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTACT -->
+
+## Contact
+
+김반석 - devzoeykim@gmail.com
+
+Project Link: [https://github.com/cozyzoey/customer-center-backend](https://github.com/cozyzoey/customer-center-backend)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+- [Strapi - Amazon AWS Deployment](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment/hosting-guides/amazon-aws.html)
+- [Strapi - Nginx Proxying](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment/optional-software/nginx-proxy.html)
+- [Strapi - Create is owner policy](https://docs.strapi.io/developer-docs/latest/guides/is-owner.html)
+- [AWS ALB HTTP Redirection To HTTPS](https://aws.amazon.com/ko/premiumsupport/knowledge-center/elb-redirect-http-to-https-using-alb/)
+- [@strapi/provider-email-nodemailer](https://market.strapi.io/providers/@strapi-provider-email-nodemailer)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
