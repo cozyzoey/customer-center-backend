@@ -104,6 +104,19 @@
     "consentSent": {
       "type": "boolean",
       "default": false
+    },
+    "schoolYear": {
+      "type": "integer",
+      "max": 3,
+      "min": 1
+    },
+    "schoolClass": {
+      "type": "integer",
+      "min": 1
+    },
+    "studentNumber": {
+      "type": "integer",
+      "min": 1
     }
   }
 }
