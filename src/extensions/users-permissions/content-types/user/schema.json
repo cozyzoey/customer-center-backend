@@ -75,9 +75,6 @@
       "target": "api::answer.answer",
       "mappedBy": "user"
     },
-    "name": {
-      "type": "string"
-    },
     "schoolName": {
       "type": "string"
     },
