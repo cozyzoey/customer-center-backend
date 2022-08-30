@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "Student",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "schoolName": {
+      "type": "string",
+      "minLength": 2
+    },
+    "schoolYear": {
+      "type": "integer",
+      "max": 3,
+      "min": 1
+    },
+    "schoolClass": {
+      "type": "integer",
+      "min": 1
+    },
+    "studentNumber": {
+      "type": "integer",
+      "min": 1
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "phoneNumber": {
+      "type": "string",
+      "regex": "^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$"
+    },
+    "email": {
+      "type": "email"
+    },
+    "dataCollectionTerm": {
+      "type": "integer",
+      "max": 3,
+      "min": 1
+    },
+    "parentName": {
+      "type": "string",
+      "minLength": 2
+    },
+    "parentEmail": {
+      "type": "email"
+    }
+  }
+}
