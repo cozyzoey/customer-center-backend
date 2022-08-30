@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "logo": {
-      "type": "string"
-    },
     "terms": {
       "type": "richtext"
     },
