@@ -74,51 +74,6 @@
       "relation": "oneToMany",
       "target": "api::answer.answer",
       "mappedBy": "user"
-    },
-    "schoolName": {
-      "type": "string"
-    },
-    "gender": {
-      "type": "enumeration",
-      "enum": [
-        "male",
-        "female"
-      ]
-    },
-    "phoneNumber": {
-      "type": "string"
-    },
-    "parentName": {
-      "type": "string"
-    },
-    "parentEmail": {
-      "type": "email"
-    },
-    "consentSigned": {
-      "type": "boolean",
-      "default": false
-    },
-    "consentSent": {
-      "type": "boolean",
-      "default": false
-    },
-    "schoolYear": {
-      "type": "integer",
-      "max": 3,
-      "min": 1
-    },
-    "schoolClass": {
-      "type": "integer",
-      "min": 1
-    },
-    "studentNumber": {
-      "type": "integer",
-      "min": 1
-    },
-    "dataCollectionTerm": {
-      "type": "integer",
-      "max": 3,
-      "min": 1
     }
   }
 }
