@@ -17,6 +17,12 @@
     },
     "privacy": {
       "type": "richtext"
+    },
+    "contactUs": {
+      "type": "string"
+    },
+    "dataCollectionNotice": {
+      "type": "richtext"
     }
   }
 }
