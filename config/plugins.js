@@ -56,6 +56,7 @@ module.exports = ({ env }) => ({
             "heading3",
             "|",
             "bold",
+            "underline",
             "italic",
             "link",
             "bulletedList",
