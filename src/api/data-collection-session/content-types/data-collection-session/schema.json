@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "data_collection_sessions",
+  "info": {
+    "singularName": "data-collection-session",
+    "pluralName": "data-collection-sessions",
+    "displayName": "dataCollectionSession",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "group": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "remainingApplicants": {
+      "type": "integer",
+      "max": 220,
+      "min": 0,
+      "default": 220
+    },
+    "sessionId": {
+      "type": "integer",
+      "unique": true,
+      "max": 9,
+      "min": 1
+    }
+  }
+}
