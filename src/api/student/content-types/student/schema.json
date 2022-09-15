@@ -57,6 +57,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::data-collection-session.data-collection-session"
+    },
+    "email": {
+      "type": "email"
+    },
+    "parentEmail": {
+      "type": "email"
     }
   }
 }
