@@ -63,6 +63,14 @@
     },
     "parentEmail": {
       "type": "email"
+    },
+    "personalInfoCollectionAndUseAgreement": {
+      "type": "boolean",
+      "default": false
+    },
+    "personalInfoProvidingToThirdPartiesAgreement": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
