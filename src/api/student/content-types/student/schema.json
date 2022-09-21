@@ -71,6 +71,9 @@
     "personalInfoProvidingToThirdPartiesAgreement": {
       "type": "boolean",
       "default": false
+    },
+    "deletedAt": {
+      "type": "datetime"
     }
   }
 }
