@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbackend=self.webpackChunkbackend||[]).push([[1760],{3682:e=>{e.exports=JSON.parse('{"plugin.description.long":"Send Strapi fejlevents til Sentry.","plugin.description.short":"Send Strapi fejlevents til Sentry."}')}}]);
