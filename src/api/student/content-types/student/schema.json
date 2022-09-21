@@ -74,6 +74,14 @@
     },
     "deletedAt": {
       "type": "datetime"
+    },
+    "childAcademicLevel": {
+      "type": "enumeration",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
     }
   }
 }
