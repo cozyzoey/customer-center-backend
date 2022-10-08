@@ -63,32 +63,14 @@ module.exports = createCoreController("api::student.student", ({ strapi }) => ({
       return ctx.badRequest();
     }
 
-    if (prevStudentData.dataCollectionSession) {
-      const prevDataCollectionSession = await strapi.db
-        .query("api::data-collection-session.data-collection-session")
-        .findOne({
-          where: {
-            id: prevStudentData.dataCollectionSession.id,
-          },
-        });
-
-      // 기존 데이터 수집 세션의 남은 자리 + 1
-      await strapi.entityService.update(
-        "api::data-collection-session.data-collection-session",
-        prevDataCollectionSession.id,
-        {
-          data: {
-            remainingApplicants:
-              prevDataCollectionSession.remainingApplicants + 1,
-          },
-        }
-      );
-    }
-
     /**
-     * 신청취소 요청이 아니고 일반 업데이트인 경우
+     * 신청취소 요청이 아니고 데이터 수집 세션을 교체하는 경우
+     * 신규로 교체된 데이터 수집 세션 자리 -1
      */
-    if (!deletedAt) {
+    if (
+      !deletedAt &&
+      prevStudentData.dataCollectionSession.id !== dataCollectionSession
+    ) {
       const curDataCollectionSession = await strapi.db
         .query("api::data-collection-session.data-collection-session")
         .findOne({
